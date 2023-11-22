@@ -113,5 +113,46 @@
         //db.bounties.deleteOne({name: 'lokinkajou'})
 
 // 3. Delete all bounties sent by Songbird
+      //db.bounties.deleteMany({client: 'Songbird'})
 
 // 4. Update all captured statuses to true
+      //db.bounties.updateMany({captured: false}, {$set: {captured: true}})
+
+
+/* This is the array after all modifications. 
+  "_id": {
+    "$oid": "655c085926d8d7834b27fc60"
+  },
+  "name": "Polarwind",
+  "species": "Polar Bear",
+  "location": "Arctic",
+  "wantedFor": "Not hibernating",
+  "client": "Sabertooth",
+  "reward": 10000,
+  "captured": true
+},
+{
+  "_id": {
+    "$oid": "655c085926d8d7834b27fc61"
+  },
+  "name": "Wrecking Crows",
+  "species": "Crow",
+  "location": "Grasslands",
+  "wantedFor": "Cawing too loudly",
+  "client": "Red wolf",
+  "reward": 40000,
+  "captured": true
+},
+{
+  "_id": {
+    "$oid": "655c085926d8d7834b27fc63"
+  },
+  "name": "Grim Panda",
+  "species": "Giant Panda",
+  "location": "Temperate forest",
+  "wantedFor": "Eating all the bamboo",
+  "client": "Red wolf",
+  "reward": 5000,
+  "captured": true
+}]
+*/
